@@ -21,7 +21,12 @@ a {
   color: inherit;
 }
 
-h1,h2,h3,h4,h5,h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
   padding: 0;
@@ -30,7 +35,7 @@ p {
 ul,
 li {
   list-style-type: none;
-  padding: 0; 
+  padding: 0;
   margin: 0;
 }
 
@@ -55,7 +60,7 @@ li {
   display: inline-block;
 }
 
-.menu__item + .menu__item {
+.menu__item+.menu__item {
   padding-left: 50px;
 }
 
@@ -162,6 +167,11 @@ li {
   max-width: 870px;
 }
 
+.hero__banner-slide__img {
+  object-fit: contain;
+  min-height: 400px;
+}
+
 .hero__banner-slider__btn {
   position: absolute;
   top: 50%;
@@ -219,6 +229,9 @@ li {
   text-align: center;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sale__item-top {
@@ -294,4 +307,32 @@ li {
   right: 6px;
   bottom: -3px;
   background-image: url("../images/old-price-line.svg");
+}
+
+.sale__item-img {
+  object-fit: contain;
+}
+.sale__item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+
+.sale__item-footer {
+  font-size: 18px;
+  line-height: 21px;
+  background: #F0F0F4;
+  border-radius: 3px;
+  padding: 25px 20px;
+}
+
+.sale__item-footer span {
+  display: block;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #1C62CD;
 }
