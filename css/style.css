@@ -45,6 +45,10 @@ li {
   margin: 0 auto;
 }
 
+.page-section {
+  margin-bottom: 80px;
+}
+
 .header {
   margin-bottom: 78px;
 }
@@ -160,7 +164,6 @@ li {
 .hero__inner {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 77px;
 }
 
 .hero__banner-slider {
@@ -312,6 +315,7 @@ li {
 .sale__item-img {
   object-fit: contain;
 }
+
 .sale__item-title {
   font-weight: bold;
   font-size: 18px;
@@ -335,4 +339,63 @@ li {
   line-height: 22px;
   text-align: center;
   color: #1C62CD;
+}
+
+.search__tabs {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.search__tabs-item {
+  padding: 11px 26px 12px;
+}
+
+.search__tabs-item--active {
+  background: #F0F0F4;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.search__content-item {
+  display: none;
+}
+
+.search__content-item--active {
+  display: block;
+}
+
+
+.search__content-form {
+  display: flex;
+}
+
+.search__content-input {
+  width: 100%;
+  background: #F0F0F4;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #656464;
+  padding: 15px 20px;
+  border: none;
+}
+
+.search__content-input::placeholder {
+  color: #656464;
+}
+
+.search__content-btn {
+  background: #1C62CD;
+  padding: 17px 41px;
+  margin-left: -3px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-family: 'SFProDisplay-Bold', sans-serif;
 }
